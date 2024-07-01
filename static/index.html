@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>机房管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/layui/v2.9.13/css/layui.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo layui-hide-xs layui-bg-black layui-font-24">机房管理系统</div>
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
+                    <a href="javascript:;">
+                        <img src="//unpkg.com/outeres@0.0.10/img/layui/icon-v2.png" class="layui-nav-img">
+                        tester
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">Your Profile</a></dd>
+                        <dd><a href="javascript:;">Settings</a></dd>
+                        <dd><a href="javascript:;">Sign out</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-more-vertical"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item" tab-name="main"><a class="layui-font-20" href="javascript:;">总览</a></li>
+                    <li class="layui-nav-item" tab-name="console"><a class="layui-font-20" href="#">控制台</a></li>
+                    <li class="layui-nav-item" tab-name="block"><a class="layui-font-20" href="#">块存储</a></li>
+                    <li class="layui-nav-item" tab-name="file"><a class="layui-font-20" href="#">文件</a></li>
+                    <li class="layui-nav-item" tab-name="settings"><a class="layui-font-20" href="#">系统设置</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-body">
+        </div>
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            底部固定区域
+        </div>
+    </div>
+
+    <script src="//cdn.staticfile.net/layui/2.9.13/layui.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
